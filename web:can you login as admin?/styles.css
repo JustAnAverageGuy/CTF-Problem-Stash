@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #3366cc;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Change this line to stack items vertically */
+}
+
+label {
+    margin-bottom: 8px;
+    color: #663399;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 2px solid #663399;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #ff6666;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff4d4d;
+}
