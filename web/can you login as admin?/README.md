@@ -2,6 +2,7 @@
 
 ## Description
 Can you login as admin into the website that I made?
+Author:quinnyx
 
 ## Writeup
 The webpage dosen't actually send any request to server when we click login.
