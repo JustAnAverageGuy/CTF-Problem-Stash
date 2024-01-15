@@ -1,0 +1,13 @@
+{
+  "name": "bank",
+  "category": "pwn",
+  "author": "kn1gh7",
+  "description": "Can you steal money from the bank and buy the flag?",
+  "flag": "COPS{l0073d}",
+  "points": 100,
+  "internal_port": 31137,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "chall.c"
+  ]
+}

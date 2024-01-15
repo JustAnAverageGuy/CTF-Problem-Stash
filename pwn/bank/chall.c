@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 int main(){
-    const char* flag = getenv("FLAG");
     int balance = 1000;
     int money = 0;
     printf("Welcome to the challenge Bank!\n");
@@ -45,7 +44,7 @@ int main(){
         else if(option == 3){
             if(money < 1000000) printf("Not enough money!\n");
             else {
-                printf("FLAG: %s\n", flag);
+		system("cat /flag.txt");
                 return 0;
             }
         }
