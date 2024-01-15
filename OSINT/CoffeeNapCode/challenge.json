@@ -1,0 +1,12 @@
+{
+  "name": "CoffeeNapCode",
+  "category": "OSINT",
+  "author": "43h1",
+  "description": "Got bored in the manufacturing practices class...and got lost in the thoughts of Geometry and Codes..
+username : abhinavlenka",
+  "flag": "COPS{B-_GRADE_THA}",
+  "points": 100,
+  "files": [
+    "among.us"
+  ]
+}
