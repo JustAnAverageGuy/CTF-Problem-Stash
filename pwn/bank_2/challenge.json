@@ -1,0 +1,13 @@
+{
+  "name": "bank 2",
+  "category": "pwn",
+  "author": "kn1gh7",
+  "description": "I patched the previous system. Surely, you won't be able to steal money now!",
+  "flag": "COPS{l0073d_4g41n}",
+  "points": 200,
+  "internal_port": 31138,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "chall.c"
+  ]
+}
