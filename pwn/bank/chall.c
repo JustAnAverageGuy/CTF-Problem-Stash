@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int main(){
+    setbuf(stdout, NULL);
     int balance = 1000;
     int money = 0;
     printf("Welcome to the challenge Bank!\n");
