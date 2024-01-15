@@ -16,4 +16,4 @@ RUN chown -R root:bank_2 /home/bank_2 && \
 
 EXPOSE 31138
 
-CMD ["socat", "-T60", "TCP-LISTEN:31137,reuseaddr,fork,su=bank_2","EXEC:/home/bank_2/bank_2"]
+CMD ["socat", "-T60", "TCP-LISTEN:31138,reuseaddr,fork,su=bank_2","EXEC:/home/bank_2/bank_2"]
