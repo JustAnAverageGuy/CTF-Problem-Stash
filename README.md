@@ -1,2 +1,22 @@
 # CTF-Problem-Stash
 Problem Stash for CTFS IIT BHU
+
+`challenge.json` format:
+---
+
+```json
+
+{
+  "name": "name of the challenge", // name of the challenge
+  "category": "pwn", // category of the challeneg
+  "author": "kn1gh7", // Author
+  "description": "Can you steal money from the bank and buy the flag?", // Description
+  "flag": "COPS{l0073d}", // Flag
+  "points": 100, // Initial number of points
+  "internal_port": 31137, // port to host the challenge on 
+  "box": "ctf.copsiitbhu.co.in", // domain to host the challenge on 
+  "files": [
+    "chall.c" // file attachements for the challenge
+  ]
+}
+```
