@@ -1,6 +1,3 @@
-Got bored in the manufacturing practices class...and got lost in the thoughts of Geometry and Codes..
-
-username : abhinavlenka
 
 # CoffeeNapCode (EASY)
 
