@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install -y socat
+RUN apt-get update && apt-get install -y socat python3
 
 RUN useradd -ms /bin/sh impossible
 WORKDIR /home/impossible
