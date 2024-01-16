@@ -1,4 +1,4 @@
-# Bank (EASY)
+# Bank 2 (EASY)
 
 ## Description
 Can you steal money from the bank and buy the flag?
