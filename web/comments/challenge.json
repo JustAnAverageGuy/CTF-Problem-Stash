@@ -1,0 +1,10 @@
+{
+  "name": "comments",
+  "category": "web",
+  "author": "quinnyx",
+  "description": "What are your comments about my first website?",
+  "flag": "COPS{9h7mL_c0mm3n7514}",
+  "points": 100,
+  "internal_port": 41337,
+  "box": "ctf.copsiitbhu.co.in",
+ }
