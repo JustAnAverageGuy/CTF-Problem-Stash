@@ -29,3 +29,4 @@ Add a checkbox with chall category/name so a track of what has been hosted on CT
 - [x] OSINT/CoffeeNapCode
 - [x] web/admin
 - [x] web/comments
+- [x] pwn/math_game
