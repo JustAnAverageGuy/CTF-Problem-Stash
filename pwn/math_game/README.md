@@ -1,7 +1,7 @@
 # math game
 
 ## Description
-Can you steal money from the bank and buy the flag?
+Answer me 50 times and you get the flag. Easy right?
 
 ## Writeup
 
