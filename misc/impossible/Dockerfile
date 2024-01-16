@@ -16,4 +16,4 @@ RUN chown -R root:impossible /home/impossible && \
 
 EXPOSE 31337
 
-CMD ["socat", "-T60", "TCP-LISTEN:31338,reuseaddr,fork,su=impossible","EXEC:/home/impossible/chall.py"]
+CMD ["socat", "-T60", "TCP-LISTEN:31337,reuseaddr,fork,su=impossible","EXEC:/home/impossible/chall.py"]
