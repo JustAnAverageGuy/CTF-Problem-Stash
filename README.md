@@ -27,3 +27,5 @@ Add a checkbox with chall category/name so a track of what has been hosted on CT
 - [x] pwn/bank
 - [x] pwn/bank_2  
 - [x] OSINT/CoffeeNapCode
+- [x] web/admin
+- [x] web/comments
