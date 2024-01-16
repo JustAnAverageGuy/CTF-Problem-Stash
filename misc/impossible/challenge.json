@@ -1,0 +1,13 @@
+{
+  "name": "impossible",
+  "category": "misc",
+  "author": "kn1gh7",
+  "description": "Pretty sure my flag is safe as these conditions are IMPOSSIBLE lol",
+  "flag": "COPS{m0r3_l1k3_1_4m_p0551bl3}",
+  "points": 300,
+  "internal_port": 31139,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "chall.py"
+  ]
+}
