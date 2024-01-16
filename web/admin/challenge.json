@@ -1,0 +1,10 @@
+{
+  "name": "admin",
+  "category": "web",
+  "author": "quinnyx",
+  "description": "Can you login as admin into the website that I made?",
+  "flag": "COPS{09r0T13c1ph3r14}",
+  "points": 200,
+  "internal_port": 41338,
+  "box": "ctf.copsiitbhu.co.in"
+}

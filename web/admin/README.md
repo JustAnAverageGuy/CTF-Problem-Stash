@@ -1,4 +1,4 @@
-# Can you login as admin?
+# admin
 
 ## Description
 Can you login as admin into the website that I made?
