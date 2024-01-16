@@ -20,3 +20,9 @@ Problem Stash for CTFS IIT BHU
   ]
 }
 ```
+
+Add a checkbox with chall category/name so a track of what has been hosted on CTFd can be tracked and we do not miss challs
+
+- [x] misc/impossible
+- [x] pwn/bank
+- [x] pwn/bank_2  
