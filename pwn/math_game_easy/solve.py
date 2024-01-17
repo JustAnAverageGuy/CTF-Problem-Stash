@@ -4,6 +4,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 target = remote("ctf.copsiitbhu.co.in", 31139)
+# target = process("./math_game.py")
 score = 0
 
 while score < 100:
