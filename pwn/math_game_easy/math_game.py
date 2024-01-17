@@ -3,7 +3,7 @@ import random
 
 flag = open('/flag.txt').read()
 score = 0
-max_score = 50
+max_score = 100
 operators = ["+", "-", "*"]
 while score < max_score:
     print(f"SCORE: {score}")

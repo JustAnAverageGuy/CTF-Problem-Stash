@@ -1,7 +1,7 @@
 # math game (easy)
 
 ## Description
-Answer me 50 times and you get the flag. Easy right?
+Answer me 100 times and you get the flag. Easy right?
 
 ## Writeup
 ```python

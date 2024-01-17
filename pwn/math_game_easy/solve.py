@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 target = remote("ctf.copsiitbhu.co.in", 31139)
 score = 0
 
-while score < 50:
+while score < 100:
     target.recvuntil('(')
     s = "(" + target.recvline().decode('utf-8')
     target.recvuntil(':')
