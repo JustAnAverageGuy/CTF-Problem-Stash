@@ -19,4 +19,4 @@ RUN chmod 440 /home/ctf/templates/*
 RUN python3 -m pip install -r /home/ctf/requirements.txt
 
 USER ctf
-CMD ["python3", "server.py"]
+CMD ["python3", "/home/ctf/server.py"]
