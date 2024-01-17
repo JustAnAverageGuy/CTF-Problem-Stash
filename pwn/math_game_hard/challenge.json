@@ -1,0 +1,13 @@
+{
+  "name": "math game hard",
+  "category": "pwn",
+  "author": "kn1gh7",
+  "description": "Answer me 10000 times and you get the flag. But there is a catch. Can you get it?",
+  "flag": "COPS{m47h5_g0d_0rz}",
+  "points": 500,
+  "internal_port": 31140,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "math_game.py"
+  ]
+}
