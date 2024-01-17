@@ -1,0 +1,10 @@
+{
+  "name": "headers",
+  "category": "web",
+  "author": "kn1gh7",
+  "description": "Headers? Football?? WHAAAT?",
+  "flag": "COPS{7h475_4_g04l!}",
+  "points": 200,
+  "internal_port": 41339,
+  "box": "ctf.copsiitbhu.co.in"
+}
