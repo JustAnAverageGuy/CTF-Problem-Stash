@@ -14,6 +14,6 @@ RUN chown -R root:math_game /home/math_game && \
      chown root:math_game /flag.txt && \
      chmod 440 /flag.txt
 
-EXPOSE 31139
+EXPOSE 31140
 
-CMD ["socat", "-T60", "TCP-LISTEN:31139,reuseaddr,fork,su=math_game","EXEC:/home/math_game/math_game.py"]
+CMD ["socat", "-T1", "TCP-LISTEN:31140,reuseaddr,fork,su=math_game","EXEC:/home/math_game/math_game.py"]
