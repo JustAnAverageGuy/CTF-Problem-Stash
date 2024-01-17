@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, render_template_string, redirect
 import subprocess
 import urllib
-flag = open('flag.txt').read()
+flag = open('/home/ctf/flag.txt').read()
 app = Flask(__name__)
 @app.route('/')
 def main():
