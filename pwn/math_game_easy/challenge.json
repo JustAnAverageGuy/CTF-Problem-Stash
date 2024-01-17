@@ -1,0 +1,13 @@
+{
+  "name": "math game easy",
+  "category": "pwn",
+  "author": "kn1gh7",
+  "description": "Answer me 50 times and you get the flag. Easy right?",
+  "flag": "COPS{m47h5_15_fun}",
+  "points": 300,
+  "internal_port": 31139,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "math_game.py"
+  ]
+}
