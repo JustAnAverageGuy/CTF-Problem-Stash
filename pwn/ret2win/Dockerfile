@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install -y socat
+RUN apt-get update && apt-get install -y socat gcc-multilib
 
 RUN useradd -ms /bin/sh ret2win
 WORKDIR /home/ret2win
