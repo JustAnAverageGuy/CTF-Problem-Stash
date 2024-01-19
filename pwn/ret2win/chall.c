@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
   	char buffer[64];
 	t = 0;
 	printf("Would you like a flag?\n");
-	fgets(buffer,0x50,stdin);
+	gets(buffer);
 	if(t) {
 		system("cat /fake_flag.txt");
 		t();
