@@ -8,6 +8,7 @@
   "internal_port": 31141,
   "box": "ctf.copsiitbhu.co.in",
   "files": [
-    "chall.py"
+    "chall.py",
+    "ret2win"
   ]
 }
