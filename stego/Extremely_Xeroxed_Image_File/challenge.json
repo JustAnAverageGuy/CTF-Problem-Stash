@@ -1,0 +1,11 @@
+{
+  "name": "Extremely_Xeroxed_Image_File",
+  "category": "stego",
+  "author": "kn1gh7",
+  "description": "Just find the flag!",
+  "flag": "COPS{c0mm3n75}",
+  "points": 150,
+  "files": [
+    "chall"
+  ]
+}
