@@ -1,0 +1,11 @@
+{
+  "name": "guitar",
+  "category": "stego",
+  "author": "kn1gh7",
+  "description": "Who doesn't like string instruments right?",
+  "flag": "COPS{57r1ng5_4r3_fun}",
+  "points": 100,
+  "files": [
+    "guitar.jpg"
+  ]
+}
