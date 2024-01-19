@@ -3,22 +3,24 @@
 #include <stdio.h>
 #include <string.h>
 
-void win()
-{
-  printf("code flow successfully changed\n");
+void init() {
+	setbuf(stdout, NULL);
+	setbuf(stdin, NULL);
+	setbuf(stderr, NULL);
 }
 
-int main(int argc, char **argv)
-{
-  volatile int (*fp)();
-  char buffer[64];
+void win() {
+	system("cat /flag.txt");
+}
 
-  fp = 0;
-
-  gets(buffer);
-
-  if(fp) {
-      printf("calling function pointer, jumping to 0x%08x\n", fp);
-      fp();
-  }
+int main(int argc, char **argv) {
+	init();
+	volatile int (*t)();
+  	char buffer[64];
+	t = 0;
+	fgets(buffer,0x50,stdin);
+	if(t) {
+		system("cat /fake_flag.txt");
+		t();
+	}
 }

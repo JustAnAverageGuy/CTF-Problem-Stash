@@ -1,4 +1,4 @@
-# math game (easy)
+# math game (hard)
 
 ## Description
 Answer me 10000 times and you get the flag. But there is a catch:
