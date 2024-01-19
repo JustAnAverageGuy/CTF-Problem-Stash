@@ -3,18 +3,12 @@
 #include <stdio.h>
 #include <string.h>
 
-void init() {
-	setbuf(stdout, NULL);
-	setbuf(stdin, NULL);
-	setbuf(stderr, NULL);
-}
-
 void win() {
 	system("cat /flag.txt");
 }
 
 int main(int argc, char **argv) {
-	init();
+	setbuf(stdout, NULL);
 	volatile int (*t)();
   	char buffer[64];
 	t = 0;
