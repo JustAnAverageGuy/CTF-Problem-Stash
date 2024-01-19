@@ -5,13 +5,13 @@ RUN apt-get update && apt-get install -y socat
 RUN useradd -ms /bin/sh ret2win
 WORKDIR /home/ret2win
 
-COPY ./chall ./
+COPY ./ret2win ./
 COPY ./flag.txt /
 COPY ./fake_flag.txt /
 
 RUN chown -R root:ret2win /home/ret2win && \
      chmod 750 /home/ret2win && \
-     chmod 550 /home/ret2win/chall && \
+     chmod 550 /home/ret2win/ret2win && \
      chown root:ret2win /flag.txt && \
      chmod 440 /flag.txt && \
      chown root:ret2win /fake_flag.txt && \
@@ -20,4 +20,4 @@ RUN chown -R root:ret2win /home/ret2win && \
 
 EXPOSE 31141
 
-CMD ["socat", "-T60", "TCP-LISTEN:31141,reuseaddr,fork,su=ret2win","EXEC:/home/ret2win/chall"]
+CMD ["socat", "-T60", "TCP-LISTEN:31141,reuseaddr,fork,su=ret2win","EXEC:/home/ret2win/ret2win"]
