@@ -2,7 +2,7 @@
   "name": "crackme",
   "category": "rev",
   "author": "quinnyx",
-  "description": "",
+  "description": "Find the password for a flag",
   "flag": "COPS{?i<AAmcrA^Cke[[d149}",
   "points": 100,
   "internal_port": 31137,
