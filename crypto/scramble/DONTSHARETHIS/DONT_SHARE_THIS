@@ -1,0 +1,32 @@
+#!/bin/python3
+
+from itertools import permutations
+from random import shuffle
+
+####
+from random import seed
+seed(420)
+####
+
+
+FLAG = "COPS{unscrambled_flag:)}"
+N = len(FLAG)
+K = 69
+
+perm = [*range(N)]
+shuffle(perm)
+def encode(FLAG=FLAG, perm=perm): return "".join([FLAG[i] for i in perm])
+
+encoded = encode()
+
+has = 0
+t = 1
+for i in perm:
+    has += i * t
+    t *= K
+
+print(f'{has=}\n{encoded=}')
+####
+import sys
+print(f'{N=}\n{perm=}\n{encoded=}\n{has=}',file=sys.stderr)
+####
