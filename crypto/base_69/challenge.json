@@ -1,0 +1,12 @@
+{
+  "name": "base ♋", 
+  "category": "crypto", 
+  "author": "nirvana", 
+  "description": "Well they told me to hide the flag from you. I just scrambled the characters.", 
+  "flag": "COPS{unscrambled_flag:)}", 
+  "points": 138, 
+  "files": [
+    "./scrambler.py",
+    "./output.txt"
+  ]
+}
