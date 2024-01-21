@@ -34,3 +34,4 @@ Add a checkbox with chall category/name so a track of what has been hosted on CT
 - [x] misc/sanity
 - [x] misc/survey
 - [x] web/headers
+- [ ] crypto/base69
