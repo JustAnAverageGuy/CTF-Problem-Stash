@@ -12,7 +12,7 @@ RUN chown -R root:executable /home/executable && \
      chmod 750 /home/executable && \
      chmod 550 /home/executable/executable && \
      chown root:executable /flag.txt && \
-     chmod 440 /flag.txt &&
+     chmod 440 /flag.txt
 
 EXPOSE 31144
 
