@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 # COPY package*.json ./
-RUN npm install body-parser cookie-parser express jsdom node-fetch
+RUN npm install body-parser cookie-parser express jsdom node-fetch@2
 
 COPY . .
 
