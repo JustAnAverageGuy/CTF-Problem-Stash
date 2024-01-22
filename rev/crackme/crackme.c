@@ -10,7 +10,7 @@ void enc(char* str) {
     }
 }
 int main() {
-   const char res[] = "LXYB{?r<JJvlaJ^Ltn[[m149}";
+   const char res[] = "LXYB{rJJvlaJLtnm149}";
     char inp[1000];  
     char mod[20];
     printf("Enter the password: ");
