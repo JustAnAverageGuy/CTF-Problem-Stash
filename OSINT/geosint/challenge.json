@@ -1,0 +1,10 @@
+{
+  "name": "geosint(1,2,3)",
+  "category": "OSINT",
+  "author": "43h1 & kn1gh7",
+  "description": "I wonder if you have seen these places...",
+  "points": "200 (each)",
+  "port": 51337,
+  "box": "ctf.copsiitbhu.co.in"
+}
+
