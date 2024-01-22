@@ -7,4 +7,4 @@ quinnyx
 ## Writeup
 ltrace ./crackme , We can see out input is being converted to some string of same length and being compared to some pre defined string which looks somewhat in flag format. Best guess would be caser cipher , brute forcing on decodefr gives us a flag . You can decompile the code to see the encoding function for yourself as well.
 ## Flag
-COPS{?i<AAmcrA^Cke[[d149}
+COPS{iAAmcrACked149}
