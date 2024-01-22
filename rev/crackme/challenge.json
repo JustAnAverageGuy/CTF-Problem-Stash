@@ -4,7 +4,7 @@
   "author": "quinnyx",
   "description": "Find the password for a flag",
   "flag": "COPS{?i<AAmcrA^Cke[[d149}",
-  "points": 150,
+  "points": 200,
   "files": [
     "crackme"
   ]
