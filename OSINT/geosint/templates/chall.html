@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geosint {{ chall_id }} - COPS Freshers CTF</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
-    <link rel="stylesheet" href="css/chall.css" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chall.css') }}" type="text/css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-
 </head>
-<div id="hud"><p id="chall-title">Geosint {{ chall_id }}</p><p id="chall-result">Keep on trying until you win!</p></div>
 <body>
+<div id="hud"><p id="chall-title">Geosint {{ chall_id }}</p><p id="chall-result">Keep on trying until you win!</p></div>
 <div id="panorama"></div>
 <script>
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": {{ pan_url }},
+    "panorama": "{{ pan_url }}",
     "autoLoad": true
 });
 </script>
