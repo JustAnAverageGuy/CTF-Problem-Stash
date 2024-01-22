@@ -10,7 +10,7 @@ COPY . .
 
 RUN rm -f ./public/img/chall*/*
 
-RUN node pull_challs.js
+RUN node pull_challs_fast.js
 
 EXPOSE 6958
 
