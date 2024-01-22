@@ -3,7 +3,8 @@ import subprocess
 import urllib
 import json
 
-challs = json.load('challs.json')
+f = open('challs.json')
+challs = json.load(f)
 
 app = Flask(__name__)
 
