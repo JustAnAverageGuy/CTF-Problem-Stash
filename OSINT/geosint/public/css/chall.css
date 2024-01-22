@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 html, body {
   height: 100%;
   width: 100%;
-  font-family: "8-bit", sans-serif !important;
 }
 
 #outer {
@@ -149,14 +154,5 @@ h1{
     color: #EEEEEE;
     margin: 0;
     padding: 5px;
-}
-
-@font-face {
-    font-family: "OhnoSoftie";
-    src: url("/fonts/OhnoSoftie-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "8-bit";
-    src: url("/fonts/DiaryOfAn8BitMage-lYDD.ttf") format("truetype");
 }
 

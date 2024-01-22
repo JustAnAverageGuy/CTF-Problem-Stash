@@ -8,47 +8,53 @@ var guess_coordinates = [];
 var check_count = 0;
 var pano_width = 32;
 var pano_height = 16;
-var comp_loc = {lat: 38.9877391, lng: -76.940779}; // TODO - get comp location from backend
+var center_loc = {lat: 0.00, lng: 0.00};
 
 // list of icon names
-var iconNames = ["beacon_badge.ico", "bulbus.ico", "charizard.ico", "coal_badge.ico", "cobble_badge.ico", "fen_badge.ico", "forrest_badge.ico", "icicle_badge.ico", "justin.ico", "mine_badge.ico", "pikachu.ico", "pokeball.ico", "pokeball_logo.ico", "relic_badge.ico", "tr.ico"];
+var iconNames = ['cat.ico', 'gamer.ico', 'hacker.ico', 'pizza.ico', 'taco.ico', 'galaxy_brain.ico', 'frogchamp.ico', 'hamhands.ico', 'justin.ico', 'caleb.ico'];
 
 // Get challName
 var link = document.location.href.split("/");
-var challName;
+var challComp;
 if (link[link.length - 1].length == 0) {
-    challName = link[link.length - 2];
+    challComp = link[link.length - 2];
 } else {
-    challName = link[link.length - 1];
+    challComp = link[link.length - 1];
 }
-
-//console.log("challName: " + challName);
-
+var parts = challComp.split("-");
+var compName = parts[0];
+var challName = parts[1];
+var heading = 0;
 
 async function initialize() {
+    var panoInfo;
     check_count = 0;
 
     // GET info.json
     var xhr = new XMLHttpRequest();
     xhr.open("GET", '/info.json', false); // false for synchronous request
     xhr.send( null );
-    console.log(xhr.status);
     if (xhr.status == 200) {
     	var infoJson = JSON.parse(xhr.responseText);
-    	if (infoJson.hasOwnProperty(challName)) {
-	    pano_width = infoJson[challName].width;
-	    pano_height = infoJson[challName].height;
-	    //console.log("width: " + infoJson[challName].width);
-	    //console.log("height: " + infoJson[challName].height);
+    	if (infoJson.hasOwnProperty(compName) && infoJson[compName].hasOwnProperty(challName)) {
+	    panoInfo = infoJson[compName][challName];
+	    if (panoInfo.hasOwnProperty("width") && panoInfo.hasOwnProperty("height")) {
+	    	pano_width = panoInfo.width;
+	    	pano_height = panoInfo.height;
+	    }
+	    if (panoInfo.hasOwnProperty("heading")) {
+		heading = panoInfo.heading;
+		console.log(`now have heading ${heading}`);
+	    }
 	}
     }
     
     document.getElementById('chall-title').innerHTML = '<h2>' + challName + '</h2>';
-    document.getElementById('chall-result').innerHTML = "Where it be?";
+    document.getElementById('chall-result').innerHTML = "Result: ";
 
     // Map and Map options
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: comp_loc,
+      center: center_loc,
       zoom: 1,
       streetViewControl: false,
       disableDefaultUI: true,
@@ -112,7 +118,7 @@ async function initialize() {
 // Return a pano image given the panoID.
 function getCustomPanoramaTileUrl(pano, zoom, tileX, tileY) {
     const origin = document.location.origin;
-    return `${origin}/img/${challName}/tile_${tileX}_${tileY}_${zoom}.jpeg`;
+    return `${origin}/img/${compName}/${challName}/tile_${tileX}_${tileY}_${zoom}.jpeg`;
 }
 
 // Construct the appropriate StreetViewPanoramaData given the passed pano IDs.
@@ -121,7 +127,7 @@ function getCustomPanorama(pano) {
 	tiles: {
 	    tileSize: new google.maps.Size(512, 512),
 	    worldSize: new google.maps.Size(512*pano_width, 512*pano_height),
-	    centerHeading: 105,
+	    centerHeading: heading,
 	    getTileUrl: getCustomPanoramaTileUrl,
 	},
     };

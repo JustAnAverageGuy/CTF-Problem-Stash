@@ -15,23 +15,25 @@ app.get(`/`, function(req, res) {
     res.sendFile(__dirname+'/index.html');
 });
 
-for (const [name, {pano, lat, lng, flag}] of Object.entries(coords)) {
-    app.get(`/${name}`, function(req, res) {
-    	res.sendFile(__dirname+'/chall.html');
-    });
+for (const [comp, challs] of Object.entries(coords)) {
+    for (const [name, {pano, lat, lng, flag}] of Object.entries(challs)) {
+    	app.get(`/${comp}-${name}`, function(req, res) {
+    	    res.sendFile(__dirname+'/chall.html');
+   	 });
 
-    app.post(`/${name}/submit`, (req, res) => {
-	console.log(req.body);
-	const [ guess_lat, guess_lng ] = req.body;
-	console.log("lat: " + guess_lat + "\nlng: " + guess_lng);
-	var dist = distance(guess_lat, guess_lng, lat, lng, 'K');
-	console.log("dist: " + dist);
-	if (dist == 0.0) {
-	    res.send("yes, " + flag);
-	} else {
-	    res.send("no");
-	}
-    });
+    	app.post(`/${comp}-${name}/submit`, (req, res) => {
+	    //console.log(req.body);
+	    const [ guess_lat, guess_lng ] = req.body;
+	    //console.log("lat: " + guess_lat + "\nlng: " + guess_lng);
+	    var dist = distance(guess_lat, guess_lng, lat, lng, 'K');
+	    //console.log("dist: " + dist);
+	    if (dist == 0.0) {
+	    	res.send("yes, " + flag);
+	    } else {
+	    	res.send("not here");
+	    }
+    	});
+    }
 }
 
 
@@ -57,7 +59,8 @@ function distance(lat1, lon1, lat2, lon2, unit) {
     }
 }
 
-/*const options = {
+// HTTPS
+const options = {
   key: fs.readFileSync("server.key"),
   cert: fs.readFileSync("server.cert"),
 };
@@ -65,7 +68,6 @@ function distance(lat1, lon1, lat2, lon2, unit) {
 https.createServer(options, app).listen(port, function (req, res) {
   console.log(`Server started at port ${port}`);
 });
-*/
 
 // HTTP
-app.listen(port, () => console.log('Example app is listening on port ' + port +'.'));
+//app.listen(port, () => console.log('Example app is listening on port ' + port +'.'));

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <link rel="stylesheet" href="chall.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/maps/maps.css'>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/maps/maps-web.min.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/services/services-web.min.js"></script>
+
+</head>
+<div id="hud"><p id="chall-title">Geosint 1</p><p id="chall-result">Keep on trying until you win!</p></div>
+<body>
+<div id="panorama"></div>
+<div id="outer-map" style="position: relative; height: 100%; width: 30%; float: right; right: 10px">
+    	<div id="map-box">
+	    <div id="map" style="position: absolute; bottom: 40px;"></div>
+	    <button type="button" class="btn-submit-location" onclick=submit() id="submit">Where it be?</button>
+	</div>
+</div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://i.imgur.com/5yKGpnw.jpg",
+    "autoLoad": true
+});
+const APIKey = 'nJ06fWzQkHxuAMyb6EeePdAYlu12KjIF';
+const passengerInitCoordinates = [4.876935, 52.360306]
+var map = tt.map({
+	key: APIKey,
+      	container: 'map',
+      	center: passengerInitCoordinates,
+      	zoom: 15
+});
+
+let passengerMarker
+function createPassengerMarker(markerCoordinates, popup) {
+  const passengerMarkerElement = document.createElement("div")
+  passengerMarkerElement.innerHTML = "<img src='img/man-waving-arm_32.png' style='width: 30px; height: 30px';>"
+  return new tt.Marker({ element: passengerMarkerElement })
+    .setLngLat(markerCoordinates)
+    .setPopup(popup)
+    .addTo(map)
+}
+passengerMarker = createPassengerMarker(
+  passengerInitCoordinates,
+  new tt.Popup({ offset: 35 }).setHTML(
+    "Click anywhere on the map to change passenger location."
+  )
+)
+
+passengerMarker.togglePopup()
+function drawPassengerMarkerOnMap(geoResponse) {
+  if (
+    geoResponse &&
+    geoResponse.addresses &&
+    geoResponse.addresses[0].address.freeformAddress
+  ) {
+    passengerMarker.remove()
+    passengerMarker = createPassengerMarker(
+      geoResponse.addresses[0].position,
+      new tt.Popup({ offset: 35 }).setHTML(
+        geoResponse.addresses[0].address.freeformAddress
+      )
+    )
+    passengerMarker.togglePopup()
+  }
+}
+map.on("click", function (event) {
+	const position = event.lngLat
+  	tt.services
+    	.reverseGeocode({
+      	key: APIKey,
+      	position: position,
+    	})
+    	.then(function (results) {
+		console.log(results)
+		drawPassengerMarkerOnMap(results)
+    })
+})
+</script>
+
+</body>
+</html>
+
