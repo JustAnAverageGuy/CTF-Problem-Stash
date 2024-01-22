@@ -1,0 +1,13 @@
+{
+  "name": "crackme2",
+  "category": "rev",
+  "author": "quinnyx",
+  "description": "What are software license keys? Have you ever wondered how they are generated?",
+  "flag": "COPS{l0ck5_4nD_k3y5149}",
+  "points": 200,
+  "internal_port": ,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "crackme2"
+  ]
+}
