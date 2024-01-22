@@ -1,21 +1,19 @@
 {
-	"practice": {
-		"chall1": {
-			"panoType": 1, 
-			"pano": "F:AF1QipOkwZBTsCxb3kWH67_FeVbzwSTQz6tFSfguyUvL", 
-			"lat": 25.2657547, "lng": 82.9899521, 
-			"maxZ": 5, "flag": "COPS{fake_flag_11111}"
+	"chall_id": {
+		"1": {
+			"lat": 25.2657547, 
+			"lng": 82.9899521,
+			"url": "https://i.imgur.com/5yKGpnw.jpg"
 		},
-        	"chall2": {
-			"panoType": 1, 
-			"pano": "F:AF1QipMeEi-XXfGdhlWg-xnUwxxPFCK5LXUZ46FXfxz-", 
-			"lat": 25.288517, "lng": 83.0066071, 
-			"maxZ": 5, "flag": "COPS{fake_flag_22222}"},
-        	"chall3": {
-			"panoType": 1, 
-			"pano": "F:AF1QipMVFoB8lqdYDcmwMHYMaAFmZ2NJSgDw01jcwZdP", 
-			"lat": 25.3797635, "lng": 83.0267142, 
-			"maxZ": 5, "flag": "COPS{fake_flag_33333}"
+        	"2": {
+			"lat": 25.288517, 
+			"lng": 83.0066071,
+			"url": "https://i.imgur.com/T9arKZr.jpeg"
+		},
+        	"3": {
+			"lat": 25.3797635, 
+			"lng": 83.0267142,
+			"url": "https://i.imgur.com/jwCBfVN.jpeg"
 		}
 	}
 }

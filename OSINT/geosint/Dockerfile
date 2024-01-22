@@ -1,18 +1,19 @@
-FROM node:16
+FROM ubuntu:latest
 
-WORKDIR /usr/src/app
+RUN apt-get update
+RUN apt-get -y install python3 python3-pip
 
-# Install app dependencies
-# COPY package*.json ./
-RUN npm install body-parser cookie-parser express jsdom node-fetch@2
+RUN groupadd -r ctf && useradd -r -g ctf ctf
+
+WORKDIR /home/ctf
 
 COPY . .
 
-RUN rm -f ./public/img/chall*/*
+RUN chown -R root:ctf /home/ctf
+RUN chmod 750 /home/ctf/server.py
+RUN chmod 440 /home/ctf/flag.txt
+RUN chmod 440 /home/ctf/templates/*
 
-RUN node pull_challs_fast.js
-
-EXPOSE 6958
-
-CMD [ "node", "server.js" ]
-
+RUN python3 -m pip install -r flask
+USER ctf
+CMD ["python3", "/home/ctf/server.py"]
