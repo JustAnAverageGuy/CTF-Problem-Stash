@@ -5,8 +5,6 @@
   "description": "Find the password for a flag",
   "flag": "COPS{?i<AAmcrA^Cke[[d149}",
   "points": 150,
-  "internal_port": 31137,
-  "box": "ctf.copsiitbhu.co.in",
   "files": [
     "crackme"
   ]
