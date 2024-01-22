@@ -2,6 +2,7 @@
 
 ## Description
 What are software license keys? Have you ever wondered how they are generated?
+Author:quinnyx
 ## Writeup
 
 
