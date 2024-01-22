@@ -1,0 +1,13 @@
+{
+  "name": "crackme2",
+  "category": "rev",
+  "author": "quinnyx",
+  "description": "",
+  "flag": "",
+  "points": 200,
+  "internal_port": ,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "crackme2"
+  ]
+}
