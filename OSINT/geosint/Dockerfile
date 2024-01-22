@@ -13,6 +13,6 @@ RUN chown -R root:ctf /home/ctf
 RUN chmod 750 /home/ctf/server.py
 RUN chmod 440 /home/ctf/templates/*
 
-RUN python3 -m pip install -r flask
+RUN python3 -m pip install flask
 USER ctf
 CMD ["python3", "/home/ctf/server.py"]
