@@ -1,0 +1,13 @@
+{
+  "name": "executable",
+  "category": "pwn",
+  "author": "kn1gh7",
+  "description": "No code this time! hahahaha",
+  "flag": "COPS{r3v_w17h_pwn}",
+  "points": 300,
+  "internal_port": 31144,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "executable"
+  ]
+}

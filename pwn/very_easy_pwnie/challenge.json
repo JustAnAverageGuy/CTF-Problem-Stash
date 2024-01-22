@@ -1,0 +1,13 @@
+{
+  "name": "very easie pwnie",
+  "category": "pwn",
+  "author": "kn1gh7",
+  "description": "Can you print the flag?",
+  "flag": "COPS{ur_pwn13_h45_5p4wn3d}",
+  "points": 100,
+  "internal_port": 31143,
+  "box": "ctf.copsiitbhu.co.in",
+  "files": [
+    "very_easy_pwnie.py"
+  ]
+}
