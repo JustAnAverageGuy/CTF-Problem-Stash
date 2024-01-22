@@ -60,14 +60,14 @@ function distance(lat1, lon1, lat2, lon2, unit) {
 }
 
 // HTTPS
-const options = {
-  key: fs.readFileSync("server.key"),
-  cert: fs.readFileSync("server.cert"),
-};
+//const options = {
+//  key: fs.readFileSync("server.key"),
+//  cert: fs.readFileSync("server.cert"),
+//};
 
-https.createServer(options, app).listen(port, function (req, res) {
-  console.log(`Server started at port ${port}`);
-});
+//https.createServer(options, app).listen(port, function (req, res) {
+//  console.log(`Server started at port ${port}`);
+//});
 
 // HTTP
-//app.listen(port, () => console.log('Example app is listening on port ' + port +'.'));
+app.listen(port, () => console.log('Example app is listening on port ' + port +'.'));
