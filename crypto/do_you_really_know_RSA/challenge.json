@@ -1,0 +1,12 @@
+{
+  "name": "Do you really know about RSA ?", 
+  "category": "crypto", 
+  "author": "nirvana", 
+  "description": "Just checking whether you actually know about RSA", 
+  "flag": "COPS{n1c3_50_y0u_4c7u411y_d0_kn0w_R5A}", 
+  "points": 300, 
+  "files": [
+    "./script.py",
+    "./output.txt"
+  ]
+}
