@@ -1,5 +1,5 @@
 # helpme
-
+I went to this amazing restaurant, but now I've forgotten its name. All I've got is this picture. Can you help me find it. Flag format COPS{name_of_the_restaurant} all lowercase.
 ## Description
 
 ## Writeup
