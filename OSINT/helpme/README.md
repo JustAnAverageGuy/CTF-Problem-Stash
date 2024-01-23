@@ -7,3 +7,4 @@ Read everything you can in the picture; the restaurant has won the "Times Food N
 
 Alternatively, start by Googling "Nightlife Awards 2022." You will get various results; consider the first website as the most relevant. If you look carefully, you can see the word "Sethi" below 2022 in the pic. Combine these two into an advanced Google search: "site:hospitality.economictimes.indiatimes.com intext:sethi." In the sixth search result, you will see an article about the owner of the restaurant (Rajan Sethi). It can be further confirmed because we can see "an" to the left of Sethi in the pic. Search all his restaurants to find the one matching the picture.
 ## FLAG
+COPS{the_gt_road}
