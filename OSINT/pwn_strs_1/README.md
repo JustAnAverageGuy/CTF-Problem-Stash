@@ -1,5 +1,5 @@
 
-# WeirdTIMEForCTF (EASY)
+# WeirdTIMEforCTF (EASY)
 
 ## Description
 
