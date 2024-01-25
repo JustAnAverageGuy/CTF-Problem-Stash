@@ -2,7 +2,7 @@
   "name": "message",
   "category": "stego",
   "author": "quinnyx",
-  "description": "My friend sent me this message, I can't make any sense of it. Help me out. Wrap the flag around in "COPS{your_flag}" all uppercase
+  "description": "My friend sent me this message, I can't make any sense of it. Help me out. Wrap the flag around in "COPS{your_flag}" all uppercase ,
   "flag": "COPS{M0R53C0DE09Z}",
   "points": 100,
   "files": [
