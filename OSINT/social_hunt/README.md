@@ -15,7 +15,9 @@ Author - kn1gh7 & 43h1
 
 ## Writeup
 In image inside the flag - `COPS{50c`
+
 In twitter alt text - `14l_m3d14_pr1v4c`
+
 In Instagram comments - `y_1s_4n_1llus10n`
 
 ## FLAG
