@@ -1,8 +1,8 @@
 {
-  "name": "crackme",
-  "category": "rev",
+  "name": "message",
+  "category": "stego",
   "author": "quinnyx",
-  "description": "Find the password for a flag",
+  "description": "My friend sent me this message, I can't make any sense of it. Help me out. Wrap the flag around in "COPS{your_flag} all uppercase" ",
   "flag": "COPS{iAAmcrACked149}",
   "points": 200,
   "files": [
