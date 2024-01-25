@@ -1,4 +1,4 @@
-# hidden (300)
+# johnny johnny yes papa! (300)
 
 ## Description
 Look at the picture carefully! It says a lot...
