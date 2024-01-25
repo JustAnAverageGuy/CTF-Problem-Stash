@@ -40,7 +40,7 @@ Add a checkbox with chall category/name so a track of what has been hosted on CT
 - [x] pwn/easie_pwn
 - [x] pwn/executable
 - [x] rev/crackme
-- [ ] crypto/is_this_a_field
-- [ ] crypto/do_you_know_RSA/
-- [ ] crypto/do_you_really_know_RSA/
-- [ ] crypto/BASEic_reMORSE
+- [x] crypto/is_this_a_field
+- [x] crypto/do_you_know_RSA/
+- [x] crypto/do_you_really_know_RSA/
+- [x] crypto/BASEic_reMORSE
