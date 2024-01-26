@@ -1,0 +1,1 @@
+COPS{this_is_the_longest_flag_in_this_ctf_good_luck_have_fun_decoding_it_hopefully_you_dont_hate_me_end_of_flag}
