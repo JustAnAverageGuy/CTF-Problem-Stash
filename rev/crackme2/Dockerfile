@@ -14,6 +14,6 @@ RUN chown -R root:crackme2 /home/crackme2 && \
      chown root:crackme2 /flag.txt && \
      chmod 440 /flag.txt
 
-EXPOSE 31137
+EXPOSE 61337
 
-CMD ["socat", "-T60", "TCP-LISTEN:31137,reuseaddr,fork,su=crackme2","EXEC:/home/crackme2/crackme2"]
+CMD ["socat", "-T60", "TCP-LISTEN:61137,reuseaddr,fork,su=crackme2","EXEC:/home/crackme2/crackme2"]
