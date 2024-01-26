@@ -5,6 +5,11 @@ GIFs are fun...what do you say?
 
 btw left-right-top-bottom is the key
 
+Author - kn1gh7
+
+## Attached
+chall.gif
+
 ## Writeup
 Separate out the frames of the gif
 
