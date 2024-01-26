@@ -10,6 +10,8 @@ int check_key(int key) {
 
 int main() {
     setbuf(stdout, NULL);
+    setbuf(stdin, NULL);
+    setbuf(stderr, NULL);
     int key, return_value;
     printf("Enter Key: ");
     scanf("%d", &key);
