@@ -16,7 +16,7 @@ int main() {
         puts("Correct Key! Now Keygen Me.");
 
        
-        FILE *file = fopen("flag.txt", "r");
+        FILE *file = fopen("/flag.txt", "r");
         if (file != NULL) {
             char buffer[1000]; 
             if (fgets(buffer, sizeof(buffer), file) != NULL) {
