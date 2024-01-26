@@ -16,4 +16,4 @@ RUN chown -R root:crackme2 /home/crackme2 && \
 
 EXPOSE 61337
 
-CMD ["socat", "-T60", "TCP-LISTEN:61137,reuseaddr,fork,su=crackme2","EXEC:/home/crackme2/crackme2"]
+CMD ["socat", "-T60", "TCP-LISTEN:61337,reuseaddr,fork,su=crackme2","EXEC:/home/crackme2/crackme2"]
