@@ -1,7 +1,7 @@
 # go deeper (300)
 
 ## Description
-My friend says this song hits really deep? Do you agree?
+My friend says this song hits really deep... Do you agree?
 
 btw my password is same as my discord ID
 
