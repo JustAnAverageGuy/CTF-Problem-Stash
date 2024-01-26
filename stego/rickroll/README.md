@@ -8,11 +8,14 @@ PPS - You gonna find this song at many places in this CTF (get ready for rickrol
 
 Author - kn1gh7
 
+## Attachment
+chall.wav
+
 ## Writeup
 Spectrogram mode (Cap minimum freq to 6000 to see clearly)
 
 ![screenshot](writeup.png)
 
 ## FLAG
-COPS{7h475_c00l}
+COPS{7ha75_c00l}
 
