@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int check_key(int key) {
     if (((key - 149) * 3) % 99 == 0) {
@@ -8,6 +9,7 @@ int check_key(int key) {
 }
 
 int main() {
+    setbuf(stdout, NULL);
     int key, return_value;
     printf("Enter Key: ");
     scanf("%d", &key);
