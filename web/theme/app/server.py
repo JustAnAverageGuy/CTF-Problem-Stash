@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    safe_theme = filter_path(request.args.get("theme", "themes/theme1.css"))
+    safe_theme = request.args.get("theme", "themes/theme1.css")
     f = open(safe_theme, "r")
     theme = f.read()
     f.close()
@@ -13,7 +13,7 @@ def index():
 
 @app.route('/', methods=['POST'])
 def calculate_binary():
-    safe_theme = filter_path(request.args.get("theme", "themes/theme1.css"))
+    safe_theme = request.args.get("theme", "themes/theme1.css")
     f = open(safe_theme, "r")
     theme = f.read()
     f.close()
