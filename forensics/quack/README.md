@@ -1,4 +1,4 @@
-# quack (100)
+# quack (200)
 
 ## Description
 My PC did not detect this USB. I hope it was safe lol
