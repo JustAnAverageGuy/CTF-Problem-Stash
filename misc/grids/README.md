@@ -1,4 +1,8 @@
-# grids (500)
+# grids (500) - misc
+
+Total solves - 22
+
+Final score - 430
 
 ## Description
 GIFs are fun...what do you say?
