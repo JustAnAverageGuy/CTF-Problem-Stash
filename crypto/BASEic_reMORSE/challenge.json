@@ -1,8 +1,0 @@
-{
-  "name": "BASEic reMORSE", 
-  "category": "crypto", 
-  "author": "nirvana", 
-  "description":"Have you heard Courtney Act's new music album, \"**base**ic re**morse**\" ?\nIt's about them being non-*binary*.\n\nAnyways, here's your encoded stuff. The decoded data could only have uppercase letters A to Z and digits 0 to 9. After decoding it, wrap it in `COPS{}`\n```\nBdxV3F1F3R3Hd3cXRVRV3HXR3d3HUVdxd3cdHVF3dx0VXF0ddw==\n```", 
-  "flag": "COPS{W3LPM0R53C0D31NB1N4RY}", 
-  "points": 600, 
-}
