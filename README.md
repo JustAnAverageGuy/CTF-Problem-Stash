@@ -1,46 +1,11 @@
-# CTF-Problem-Stash
-Problem Stash for CTFS IIT BHU
+# COPS Freshers CTF 2023-24 Writeups
+Writeups and problem archive for COPS Freshers CTF 2023-24 by COPS Infosec, IIT (BHU)
 
-`challenge.json` format:
----
+Some stats of the CTF:
+- Total of 312 users registered for the CTF
+- Total of 190 users submitted atleast 1 correct flag
+- A total of 60 challenges were released out which 59 had one or more solves
+- 9116 was the highest possible score out of which 7489 was achieved
+- Total of 9902 submissions were done out of which 3400 were correct
 
-```json
-
-{
-  "name": "name of the challenge", // name of the challenge
-  "category": "pwn", // category of the challeneg
-  "author": "kn1gh7", // Author
-  "description": "Can you steal money from the bank and buy the flag?", // Description
-  "flag": "COPS{l0073d}", // Flag
-  "points": 100, // Initial number of points
-  "internal_port": 31137, // port to host the challenge on 
-  "box": "ctf.copsiitbhu.co.in", // domain to host the challenge on 
-  "files": [
-    "chall.c" // file attachements for the challenge
-  ]
-}
-```
-
-Add a checkbox with chall category/name so a track of what has been hosted on CTFd can be tracked and we do not miss challs
-
-- [x] misc/impossible
-- [x] pwn/bank
-- [x] pwn/bank_2  
-- [x] OSINT/CoffeeNapCode
-- [x] web/admin
-- [x] web/comments
-- [x] pwn/math_game_easy
-- [x] pwn/math_game_hard
-- [x] misc/sanity
-- [x] misc/survey
-- [x] web/headers
-- [x] crypto/base69
-- [x] crypto/to_be_xor_not_to_be
-- [x] pwn/very_easie_pwn
-- [x] pwn/easie_pwn
-- [x] pwn/executable
-- [x] rev/crackme
-- [x] crypto/is_this_a_field
-- [x] crypto/do_you_know_RSA/
-- [x] crypto/do_you_really_know_RSA/
-- [x] crypto/BASEic_reMORSE
+Final Scoreboard - https://docs.google.com/spreadsheets/d/e/2PACX-1vQRLYcOln7vgRwswLJs1IjepFVXsU9_rFhuct--YWgy-AHzxie0EQcuvmnd7Ob5uBkbs-v7UPWP8-yU/pubhtml
