@@ -1,9 +1,15 @@
-# admin
+# admin (200) - web
+
+Total solves - 72
+
+Final points - 40
 
 ## Description
 Can you login as admin into the website that I made?
 
-Author:quinnyx
+http://ctf.copsiitbhu.co.in:41338
+
+Author - quinnyx
 
 ## Writeup
 The webpage dosen't actually send any request to server when we click login.

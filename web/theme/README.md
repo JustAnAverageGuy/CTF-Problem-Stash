@@ -1,4 +1,8 @@
-# theme (300)
+# theme (300) - web
+
+Total solves - 6
+
+Final points - 298
 
 ## Description
 I made a simple app that can give the binary representation of a number. Well the main feature is theme switcher! I have added two themes for now but I want to make sure its safe. Can you help me?

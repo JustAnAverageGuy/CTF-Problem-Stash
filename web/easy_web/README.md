@@ -1,4 +1,8 @@
-# easy web (200)
+# easy web (200) - web
+
+Total solves - 25
+
+Final points - 164
 
 ## Description
 The task is simple - find the flag!
