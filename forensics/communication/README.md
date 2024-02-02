@@ -1,4 +1,8 @@
-# communication (200)
+# communication (200) - forensics
+
+Total solves - 7
+
+Final score - 198
 
 ## Description
 The other guy did not pay me last time. Did he actually pay this time?

@@ -1,4 +1,8 @@
-# monitored (300)
+# monitored (300) - forensics
+
+Total solves - 12
+
+Final score - 289
 
 ## Description
 An attacker tried to monitor my chats...was he able to get anything?
