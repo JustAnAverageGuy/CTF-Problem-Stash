@@ -1,8 +1,15 @@
-# crackme2
+# crackme2 (200) - rev
 
 ## Description
 What are software license keys? Have you ever wondered how they are generated?
-Author:quinnyx
+
+`nc ctf.copsiitbhu.co.in 61337`
+
+Author - quinnyx
+
+## Attachment
+crackme2
+
 ## Writeup
 
 
