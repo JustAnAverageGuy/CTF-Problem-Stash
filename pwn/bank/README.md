@@ -29,5 +29,7 @@ if(input <= money) { // No check for negative input here
 ```
 As negative numbers can be added, any negative input will increase money (money -= (-1000000) ==> money += 1000000)
 
+![terminal](image.png)
+
 ## FLAG
 COPS{l0073d}
