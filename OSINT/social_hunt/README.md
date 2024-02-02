@@ -1,4 +1,8 @@
-# Social Hunt (200)
+# Social Hunt (200) - OSINT
+
+Total solves - 63
+
+Final score - 40
 
 ## Description
 We spread some easter eggs on our social media pages 👀. Can you find them and get the flag?
