@@ -1,5 +1,9 @@
 # crackme2 (200) - rev
 
+Total solves - 21
+
+Final points - 175
+
 ## Description
 What are software license keys? Have you ever wondered how they are generated?
 
