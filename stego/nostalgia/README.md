@@ -1,4 +1,8 @@
-# nostalgia (200)
+# nostalgia (200) - stego
+
+Total solves - 85
+
+Final points - 40
 
 ## Description
 Have you ever heard sounds like this? 

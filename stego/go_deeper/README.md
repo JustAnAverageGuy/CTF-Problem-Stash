@@ -1,4 +1,8 @@
-# go deeper (300)
+# go deeper (300) - stego
+
+Total solves - 41
+
+Final points - 147
 
 ## Description
 My friend says this song hits really deep... Do you agree?
@@ -11,7 +15,9 @@ Author - kn1gh7
 chall.wav
 
 ## Writeup
-Hints are towards deep sound. Open it and add password - `0xkn1gh7` (my discord ID)
+The repetition of word `deep` is the hint here. On searching "deep audio ctf" or other related things you would have found [deep sound](https://github.com/Jpinsoft/DeepSound). 
+
+Simply add the file to it and enter password - `0xkn1gh7` (my discord ID) to get the flag!
 
 ## FLAG
 COPS{7h475_wh47_5h3_541d}

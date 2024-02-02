@@ -1,4 +1,8 @@
-# rules (400)
+# rules (400) - stego
+
+Total solves - 1
+
+Final points - 400
 
 ## Description
 Normally lsb is easy right? Lets pump up the game a bit lol
@@ -11,6 +15,7 @@ org.png
 create.py
 
 ## Writeup
+This was nothing more a simple python coding exercise, just given a flavour of stego
 
 ```python
 from PIL import Image

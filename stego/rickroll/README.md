@@ -1,4 +1,8 @@
-# rickroll (200)
+# rickroll (200) - stego
+
+Total solves - 48
+
+Final points - 59
 
 ## Description
 See through this Rick Astley's masterpiece to find the flag
